@@ -2,7 +2,7 @@ poeng = 0
 
 situasjon_1_ferdig = False
 situasjon_2_ferdig = False
-situasjon_3_ferdig = False  
+situasjon_3_ferdig = False
 
 print("=== ERLINGS UTFORDRINGER ===")
 print("Du er prosjektleder Erling.")
@@ -63,28 +63,31 @@ while not (
 
         while True:
 
-            print("Idividuelle samtaler og felles møte")
-            print("1.Erling snakker først med Hamdi og Hallgeir hver for seg, før han samler dem for å diskutere mulige løsninger.")
-            print("2.Erling lar Hamdi og Hallgeir forsøke å løse uenigheten på egen hånd. ")
-            print("3. Erling bruker Hamdi sitt forslag som utgangspunkt, men lar Hallgeir foreslå endringer etter at løsningen er testet.")
+            print("KONFLIKT 2")
+            print("1. Snakke med begge hver for seg, deretter ha et felles møte.")
+            print("2. Ikke blande seg inn og la Hamdi og Hallgeir løse konflikten selv.")
+            print("3. Arrangere et felles møte, vurdere begge forslagene og finne en løsning sammen.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Begge får forklart sitt syn, og de kan finne en løsning sammen. Samtidig kan de oppfatte samtalene som forskjellsbehandling dersom Erling ikke er tydelig og rettferdig.")
-                poeng += 3
+                print("Mulig positiv konsekvens: Erling forstår konflikten bedre, og et felles møte hjelper dem med å finne en løsning. Konflikten løses, og fremdriften fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi eller Hallgeir kan føle at Erling tar parti. Dette kan skape mistillit, baksnakking og forsinkelser i prosjektet.")
+                poeng += 15
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "2":
-                print("De får mulighet til å løse konflikten selv, men dersom de ikke blir enige, kan uenigheten vokse og føre til dårligere samarbeid og forsinkelser.")
-                poeng += 2
+                print("Mulig positiv konsekvens: Hamdi og Hallgeir finner en løsning på egen hånd. Tilliten styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: De klarer ikke å løse konflikten, kollegaene velger side, og samarbeidet svekkes. Dette kan føre til forsinkelser i prosjektet.")
+                poeng += 5
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "3":
-                print("Teamet får en tydelig retning og kan fortsette arbeidet, men Hallgeir kan føle at meningene hans blir nedprioritert, slik at konflikten ikke blir helt løst.")
-                poeng += 1
+                print("Mulig positiv konsekvens: Hamdi og Hallgeir får forklart synspunktene sine og finner en løsning som kombinerer begge forslagene. Samarbeidet styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi og Hallgeir blir fortsatt uenige og klarer ikke å inngå kompromiss. Dette skaper frustrasjon og forsinker arbeidet med prototypen.")
+                poeng += 10
                 situasjon_2_ferdig = True
                 break
 
@@ -95,7 +98,7 @@ while not (
 
         while True:
 
-            print("")
+            print("MOTIVASJON")
             print("1. Valg 1")
             print("2. Valg 2")
             print("3. Valg 3")
