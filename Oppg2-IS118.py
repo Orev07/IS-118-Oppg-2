@@ -4,7 +4,7 @@ situasjon_1_ferdig = False
 situasjon_2_ferdig = False
 situasjon_3_ferdig = False
 
-print("=== ERLINGS UTFORDRINGER ===")
+print("ERLINGS UTFORDRINGER")
 print("Du er prosjektleder Erling.")
 print("Du må håndtere tre ulike situasjoner.")
 
@@ -16,8 +16,8 @@ while not (
     situasjon_3_ferdig
 ):
 
-    print("Velg hvilken situasjon du vil jobbe med:")
-
+    print("Velg hvilken situasjon du vil jobbe med med et tall fra 1-3:")
+#om situasjoenene er false vil den printes pga, not false = true
     if not situasjon_1_ferdig:
         print("1. Konflikt 1")
 
@@ -30,7 +30,7 @@ while not (
     valg = input("Velg situasjon: ")
 
     if valg == "1" and not situasjon_1_ferdig:
-
+#vil bare være mulig og entre situasjonen vis den er true, når den er false vil det ikke vøre mulig og entre den med et uhell
         while True:
 
             print("KONFLIKT 1")
@@ -42,19 +42,20 @@ while not (
 
             if svar == "1":
                 print("Konsekvens av valg 1")
-                poeng += 3
+                poeng += 15
                 situasjon_1_ferdig = True
+                #break gjør at while-løkken til konfliktene stopper, slik at man ikke ender opp i en evig loop i samme konflikt
                 break
 
             elif svar == "2":
                 print("Konsekvens av valg 2")
-                poeng += 2
+                poeng += 5
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "3":
                 print("Konsekvens av valg 3")
-                poeng += 1
+                poeng += 10
                 situasjon_1_ferdig = True
                 break
 
@@ -74,19 +75,19 @@ while not (
 
             if svar == "1":
                 print("Konsekvens av valg 1")
-                poeng += 3
+                poeng += 15
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "2":
                 print("Konsekvens av valg 2")
-                poeng += 2
+                poeng += 5
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "3":
                 print("Konsekvens av valg 3")
-                poeng += 1
+                poeng += 10
                 situasjon_2_ferdig = True
                 break
 
@@ -106,19 +107,19 @@ while not (
 
             if svar == "1":
                 print("Konsekvens av valg 1")
-                poeng += 3
+                poeng += 15
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "2":
                 print("Konsekvens av valg 2")
-                poeng += 2
+                poeng += 5
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "3":
                 print("Konsekvens av valg 3")
-                poeng += 1
+                poeng += 10
                 situasjon_3_ferdig = True
                 break
 
@@ -128,19 +129,17 @@ while not (
     else:
         print("Ugyldig valg eller situasjonen er allerede gjennomført.")
 
-print("===================")
-print("TOTAL POENGSUM:", poeng)
-print("===================")
+print(f"TOTAL POENGSUM: {poeng}")
 
-if poeng >= 8:
-    print("SLUTT 1")
-    print("Teamet gjenoppretter tilliten og går videre til norming-fasen.")
+if poeng >= 35:
+    print("VIDERE TIL NORMING-FASEN:")
+    print("Teamet gjenoppretter tilliten og går videre til norming-fasen. Strålende:)")
 
-elif poeng >= 5:
-    print("SLUTT 2")
-    print("Konfliktene er delvis løst, men relasjonene er fortsatt sårbare.")
+elif poeng >= 25:
+    print("PÅ VEI MOT FORBEDRING:")
+    print("Konfliktene er delvis løst, men relasjonene er fortsatt sårbare. Nesten der ;)")
 
 else:
-    print("SLUTT 3")
-    print("Prosjektet mister samhold og blir forsinket.")
+    print("FAST LÅST I STORMING-FASEN")
+    print("Prosjektet mister samhold og blir forsinket. Her må nok noen valg revurderes :/")
 
