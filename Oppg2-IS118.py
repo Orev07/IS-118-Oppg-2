@@ -63,7 +63,7 @@ while not (
 
         while True:
 
-            print("KONFLIKT 2")
+            print("KONFLIKT 2 Hamdi og Hallgeir er uenige om hvordan digitale folkemøter skal gjennomføres, og Erling må finne en måte å løse konflikten på.")
             print("1. Snakke med begge hver for seg, deretter ha et felles møte.")
             print("2. Ikke blande seg inn og la Hamdi og Hallgeir løse konflikten selv.")
             print("3. Arrangere et felles møte, vurdere begge forslagene og finne en løsning sammen.")
