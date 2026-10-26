@@ -98,28 +98,28 @@ while not (
 
         while True:
 
-            print("MOTIVASJON")
-            print("1. Valg 1")
-            print("2. Valg 2")
-            print("3. Valg 3")
+            print("Hvordan bevare motivasjonen i teamet?")
+            print("1. Vil du prioritere relasjonsbygging og tydelig kommunikasjon ved å samle teamet for å avklare mål, roller og samarbeid?")
+            print("2. Vil du prioritere fremdrift og leveranser for å sikre at prototypen blir ferdig innen fristen?")
+            print("3. Vil du fordele konkrete arbeidsoppgaver og delmål og følge opp fremdriften gjennom korte statusmøter?")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Konsekvens av valg 1")
-                poeng += 3
+                print("Tilliten og samarbeidet i teamet styrkes, men du får mindre tid til arbeidet med prototypen.")
+                poeng += 15
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "2":
-                print("Konsekvens av valg 2")
-                poeng += 2
+                print("Teamet arbeider mer effektivt på kort sikt, men uløste konflikter svekker motivasjonen og samarbeidet.")
+                poeng += 5
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "3":
-                print("Konsekvens av valg 3")
-                poeng += 1
+                print("Teamet får bedre struktur og motivasjon, men tett oppfølging og stor arbeidsmengde skaper ekstra press.")
+                poeng += 10
                 situasjon_3_ferdig = True
                 break
 
