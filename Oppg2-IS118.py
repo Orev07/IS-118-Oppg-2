@@ -31,15 +31,15 @@ while not (
 
         while True:
 
-            print("Den første konflikten Erling må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
-            print("1. Erling snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
-            print("2. Erling samler Silje og Elias for å diskutere uenigheten sammen.")
-            print("3. Erling velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
+            print("Den første konflikten du må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker nå resten av teamet.")
+            print("1. Du snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
+            print("2. Du samler Silje og Elias for å diskutere uenigheten sammen.")
+            print("3. Du velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Erling får bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
+                print("Du vil få bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
                 poeng += 15
                 situasjon_1_ferdig = True
                 break
