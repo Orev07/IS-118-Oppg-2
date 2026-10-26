@@ -17,13 +17,13 @@ while not (
     print("Velg hvilken situasjon du vil jobbe med:")
 
     if not situasjon_1_ferdig:
-        print("1. Konflikt 1")
+        print("1. Konflikt mellom Silje og Elias")
 
     if not situasjon_2_ferdig:
-        print("2. Uenigheten mellom Hamdi og Hallgeir")
+        print("2. Uenighet mellom Hamdi og Hallgeir ")
 
     if not situasjon_3_ferdig:
-        print("3. Motivasjon")
+        print("3. Opprettholde motivasjon i teamet")
 
     valg = input("Velg situasjon: ")
 
@@ -31,28 +31,28 @@ while not (
 
         while True:
 
-            print("KONFLIKT 1")
-            print("1. Valg 1")
-            print("2. Valg 2")
-            print("3. Valg 3")
+            print("Den første konflikten Erling må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
+            print("1. Erling snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
+            print("2. Erling samler Silje og Elias for å diskutere uenigheten sammen.")
+            print("3. Erling velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Konsekvens av valg 1")
-                poeng += 3
+                print("Erling får bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
+                poeng += 15
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "2":
-                print("Konsekvens av valg 2")
-                poeng += 2
+                print("De får mulighet til å forstå hverandres synspunkter, men diskusjonen kan bli anspent dersom de føler seg kritisert.")
+                poeng += 5
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "3":
-                print("Konsekvens av valg 3")
-                poeng += 1
+                print("Arbeidet kan fortsette som planlagt, men Silje kan føle at ideene hennes blir nedprioritert, slik at konflikten ikke blir helt løst.")
+                poeng += 10
                 situasjon_1_ferdig = True
                 break
 
