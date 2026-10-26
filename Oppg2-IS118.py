@@ -17,13 +17,13 @@ while not (
     print("Velg hvilken situasjon du vil jobbe med:")
 
     if not situasjon_1_ferdig:
-        print("1. Konflikt 1")
+        print("1. Konflikt mellom Silje og Elias")
 
     if not situasjon_2_ferdig:
-        print("2. Konflikt 2")
+        print("2. Uenighet mellom Hamdi og Hallgeir ")
 
     if not situasjon_3_ferdig:
-        print("3. Hvordan bevare motivasjonen i teamet?")
+        print("3. Opprettholde motivasjon i teamet")
 
     valg = input("Velg situasjon: ")
 
@@ -31,28 +31,28 @@ while not (
 
         while True:
 
-            print("")
-            print("1.")
-            print("2.")
-            print("3.")
+            print("Den første konflikten Erling må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
+            print("1. Erling snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
+            print("2. Erling samler Silje og Elias for å diskutere uenigheten sammen.")
+            print("3. Erling velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("")
-                poeng += 3
+                print("Erling får bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
+                poeng += 15
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "2":
-                print("")
-                poeng += 2
+                print("De får mulighet til å forstå hverandres synspunkter, men diskusjonen kan bli anspent dersom de føler seg kritisert.")
+                poeng += 5
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "3":
-                print("") 
-                poeng += 1
+                print("Arbeidet kan fortsette som planlagt, men Silje kan føle at ideene hennes blir nedprioritert, slik at konflikten ikke blir helt løst.")
+                poeng += 10
                 situasjon_1_ferdig = True
                 break
 
@@ -64,27 +64,30 @@ while not (
         while True:
 
             print("KONFLIKT 2")
-            print("1. Valg 1")
-            print("2. Valg 2")
-            print("3. Valg 3")
+            print("1. Snakke med begge hver for seg, deretter ha et felles møte.")
+            print("2. Ikke blande seg inn og la Hamdi og Hallgeir løse konflikten selv.")
+            print("3. Arrangere et felles møte, vurdere begge forslagene og finne en løsning sammen.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Konsekvens av valg 1")
-                poeng += 3
+                print("Mulig positiv konsekvens: Erling forstår konflikten bedre, og et felles møte hjelper dem med å finne en løsning. Konflikten løses, og fremdriften fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi eller Hallgeir kan føle at Erling tar parti. Dette kan skape mistillit, baksnakking og forsinkelser i prosjektet.")
+                poeng += 15
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "2":
-                print("Konsekvens av valg 2")
-                poeng += 2
+                print("Mulig positiv konsekvens: Hamdi og Hallgeir finner en løsning på egen hånd. Tilliten styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: De klarer ikke å løse konflikten, kollegaene velger side, og samarbeidet svekkes. Dette kan føre til forsinkelser i prosjektet.")
+                poeng += 5
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "3":
-                print("Konsekvens av valg 3")
-                poeng += 1
+                print("Mulig positiv konsekvens: Hamdi og Hallgeir får forklart synspunktene sine og finner en løsning som kombinerer begge forslagene. Samarbeidet styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi og Hallgeir blir fortsatt uenige og klarer ikke å inngå kompromiss. Dette skaper frustrasjon og forsinker arbeidet med prototypen.")
+                poeng += 10
                 situasjon_2_ferdig = True
                 break
 
