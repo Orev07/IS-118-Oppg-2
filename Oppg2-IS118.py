@@ -1,5 +1,5 @@
 poeng = 0
-
+#false gjør at situasjonene ikke er gjennomført enda
 situasjon_1_ferdig = False
 situasjon_2_ferdig = False
 situasjon_3_ferdig = False
@@ -8,6 +8,8 @@ print("=== ERLINGS UTFORDRINGER ===")
 print("Du er prosjektleder Erling.")
 print("Du må håndtere tre ulike situasjoner.")
 
+#not false = true, så da vil løkken starte
+#når alle situasjoenene blir true, blir not true= false, og løkken vil stoppe
 while not (
     situasjon_1_ferdig and
     situasjon_2_ferdig and
