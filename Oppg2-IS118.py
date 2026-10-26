@@ -33,7 +33,7 @@ while not (
 #vil bare være mulig og entre situasjonen vis den er true, når den er false vil det ikke vøre mulig og entre den med et uhell
         while True:
 
-            print("Den første konflikten Erling må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
+            print("KOnlfikt 1:\nDen er mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
             print("1. Erling snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
             print("2. Erling samler Silje og Elias for å diskutere uenigheten sammen.")
             print("3. Erling velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
@@ -66,7 +66,7 @@ while not (
 
         while True:
 
-            print("KONFLIKT 2 Hamdi og Hallgeir er uenige om hvordan digitale folkemøter skal gjennomføres, og Erling må finne en måte å løse konflikten på.")
+            print("KONFLIKT 2:\nHamdi og Hallgeir er uenige om hvordan digitale folkemøter skal gjennomføres, og Erling må finne en måte å løse konflikten på.")
             print("1. Snakke med begge hver for seg, deretter ha et felles møte.")
             print("2. Ikke blande seg inn og la Hamdi og Hallgeir løse konflikten selv.")
             print("3. Arrangere et felles møte, vurdere begge forslagene og finne en løsning sammen.")
@@ -101,7 +101,7 @@ while not (
 
         while True:
 
-            print("Hvordan bevare motivasjonen i teamet?")
+            print("Situasjon 3:\nHvordan bevare motivasjonen i teamet?")
             print("1. Vil du prioritere relasjonsbygging og tydelig kommunikasjon ved å samle teamet for å avklare mål, roller og samarbeid?")
             print("2. Vil du prioritere fremdrift og leveranser for å sikre at prototypen blir ferdig innen fristen?")
             print("3. Vil du fordele konkrete arbeidsoppgaver og delmål og følge opp fremdriften gjennom korte statusmøter?")
