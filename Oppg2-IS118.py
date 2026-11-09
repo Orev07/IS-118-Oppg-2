@@ -1,21 +1,25 @@
 poeng = 0
 
+#false gjør at situasjonene ikke er gjennomført enda
 situasjon_1_ferdig = False
 situasjon_2_ferdig = False
-situasjon_3_ferdig = False  
+situasjon_3_ferdig = False
 
-print("=== ERLINGS UTFORDRINGER ===")
-print("Du er prosjektleder Erling.")
-print("Du må håndtere tre ulike situasjoner.")
+print("ERLINGS UTFORDRINGER")
+print("Du er prosjektleder for kommunens digitale medborgerportal.")
+print("Fristen nærmer seg, og konfliktene i teamet øker.")
+print("Hvordan du håndterer situasjonene vil avgjøre prosjektets framtid.")
 
+#not false = true, så da vil løkken starte
+#når alle situasjoenene blir true, blir not true= false, og løkken vil stoppe
 while not (
     situasjon_1_ferdig and
     situasjon_2_ferdig and
     situasjon_3_ferdig
 ):
 
-    print("Velg hvilken situasjon du vil jobbe med:")
-
+    print("Velg hvilken situasjon du vil jobbe med, med et tall fra 1-3:")
+#om situasjoenene er false vil den printes pga, not false = true
     if not situasjon_1_ferdig:
         print("1. Konflikt mellom Silje og Elias")
 
@@ -28,7 +32,7 @@ while not (
     valg = input("Velg situasjon: ")
 
     if valg == "1" and not situasjon_1_ferdig:
-
+#vil bare være mulig og entre situasjonen vis den er true, når den er false vil det ikke vøre mulig og entre den med et uhell
         while True:
 
             print("Den første konflikten du må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker nå resten av teamet.")
@@ -42,16 +46,17 @@ while not (
                 print("Du vil få bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
                 poeng += 15
                 situasjon_1_ferdig = True
+                #break gjør at while-løkken til konfliktene stopper, slik at man ikke ender opp i en evig loop i samme konflikt
                 break
 
             elif svar == "2":
-                print("De får mulighet til å forstå hverandres synspunkter, men diskusjonen kan bli anspent dersom de føler seg kritisert.")
+                print("De får mulighet til å forstå hverandres synspunkter, men diskusjonen kan bli anspent dersom de føler seg kritisert.\n")
                 poeng += 5
                 situasjon_1_ferdig = True
                 break
 
             elif svar == "3":
-                print("Arbeidet kan fortsette som planlagt, men Silje kan føle at ideene hennes blir nedprioritert, slik at konflikten ikke blir helt løst.")
+                print("Arbeidet kan fortsette som planlagt, men Silje kan føle at ideene hennes blir nedprioritert, slik at konflikten ikke blir helt løst.\n")
                 poeng += 10
                 situasjon_1_ferdig = True
                 break
@@ -63,28 +68,31 @@ while not (
 
         while True:
 
-            print("Idividuelle samtaler og felles møte")
-            print("1.Erling snakker først med Hamdi og Hallgeir hver for seg, før han samler dem for å diskutere mulige løsninger.")
-            print("2.Erling lar Hamdi og Hallgeir forsøke å løse uenigheten på egen hånd. ")
-            print("3. Erling bruker Hamdi sitt forslag som utgangspunkt, men lar Hallgeir foreslå endringer etter at løsningen er testet.")
+            print("\nSITUASJON 2:\nHamdi og Hallgeir er uenige om hvordan digitale folkemøter skal gjennomføres, og Erling må finne en måte å løse konflikten på.")
+            print("1. Snakke med begge hver for seg, deretter ha et felles møte.")
+            print("2. Ikke blande seg inn og la Hamdi og Hallgeir løse konflikten selv.")
+            print("3. Arrangere et felles møte, vurdere begge forslagene og finne en løsning sammen.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Begge får forklart sitt syn, og de kan finne en løsning sammen. Samtidig kan de oppfatte samtalene som forskjellsbehandling dersom Erling ikke er tydelig og rettferdig.")
-                poeng += 3
+                print("\nMulig positiv konsekvens: Erling forstår konflikten bedre, og et felles møte hjelper dem med å finne en løsning. Konflikten løses, og fremdriften fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi eller Hallgeir kan føle at Erling tar parti. Dette kan skape mistillit, baksnakking og forsinkelser i prosjektet.\n")
+                poeng += 15
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "2":
-                print("De får mulighet til å løse konflikten selv, men dersom de ikke blir enige, kan uenigheten vokse og føre til dårligere samarbeid og forsinkelser.")
-                poeng += 2
+                print("\nMulig positiv konsekvens: Hamdi og Hallgeir finner en løsning på egen hånd. Tilliten styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: De klarer ikke å løse konflikten, kollegaene velger side, og samarbeidet svekkes. Dette kan føre til forsinkelser i prosjektet.\n")
+                poeng += 5
                 situasjon_2_ferdig = True
                 break
 
             elif svar == "3":
-                print("Teamet får en tydelig retning og kan fortsette arbeidet, men Hallgeir kan føle at meningene hans blir nedprioritert, slik at konflikten ikke blir helt løst.")
-                poeng += 1
+                print("\nMulig positiv konsekvens: Hamdi og Hallgeir får forklart synspunktene sine og finner en løsning som kombinerer begge forslagene. Samarbeidet styrkes, og prosjektet fortsetter som planlagt.")
+                print("Mulig negativ konsekvens: Hamdi og Hallgeir blir fortsatt uenige og klarer ikke å inngå kompromiss. Dette skaper frustrasjon og forsinker arbeidet med prototypen.\n")
+                poeng += 10
                 situasjon_2_ferdig = True
                 break
 
@@ -95,28 +103,28 @@ while not (
 
         while True:
 
-            print("")
-            print("1. Valg 1")
-            print("2. Valg 2")
-            print("3. Valg 3")
+            print("\nSITUASJON 3:\nHvordan bevare motivasjonen i teamet?")
+            print("1. Vil du prioritere relasjonsbygging og tydelig kommunikasjon ved å samle teamet for å avklare mål, roller og samarbeid?")
+            print("2. Vil du prioritere fremdrift og leveranser for å sikre at prototypen blir ferdig innen fristen?")
+            print("3. Vil du fordele konkrete arbeidsoppgaver og delmål og følge opp fremdriften gjennom korte statusmøter?")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Konsekvens av valg 1")
-                poeng += 3
+                print("Tilliten og samarbeidet i teamet styrkes, men du får mindre tid til arbeidet med prototypen.\n")
+                poeng += 15
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "2":
-                print("Konsekvens av valg 2")
-                poeng += 2
+                print("Teamet arbeider mer effektivt på kort sikt, men uløste konflikter svekker motivasjonen og samarbeidet.\n")
+                poeng += 5
                 situasjon_3_ferdig = True
                 break
 
             elif svar == "3":
-                print("Konsekvens av valg 3")
-                poeng += 1
+                print("Teamet får bedre struktur og motivasjon, men tett oppfølging og stor arbeidsmengde skaper ekstra press.\n")
+                poeng += 10
                 situasjon_3_ferdig = True
                 break
 
@@ -124,21 +132,20 @@ while not (
                 print("Ugyldig valg. Prøv igjen.")
 
     else:
-        print("Ugyldig valg eller situasjonen er allerede gjennomført.")
+        print("\nUgyldig valg eller situasjonen er allerede gjennomført.\n")
 
-print("===================")
-print("TOTAL POENGSUM:", poeng)
-print("===================")
+print(f"TOTAL POENGSUM: {poeng}")
 
-if poeng >= 8:
-    print("SLUTT 1")
-    print("Teamet gjenoppretter tilliten og går videre til norming-fasen.")
+if poeng >= 35:
+    print("\nVIDERE TIL NORMING-FASEN:")
+    print("Teamet gjenoppretter tilliten og går videre til norming-fasen. Strålende:)")
 
-elif poeng >= 5:
-    print("SLUTT 2")
-    print("Konfliktene er delvis løst, men relasjonene er fortsatt sårbare.")
+elif poeng >= 25:
+    print("\nPÅ VEI MOT FORBEDRING:")
+    print("Konfliktene er delvis løst, men relasjonene er fortsatt sårbare. Nesten der ;)")
 
 else:
-    print("SLUTT 3")
-    print("Prosjektet mister samhold og blir forsinket.")
+    print("\nFAST LÅST I STORMING-FASEN")
+    print("Prosjektet mister samhold og blir forsinket. Her må nok noen valg revurderes :/")
 
+print("\nTakk for at du spilte! :))")
