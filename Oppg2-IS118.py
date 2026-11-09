@@ -35,15 +35,15 @@ while not (
 #vil bare være mulig og entre situasjonen vis den er true, når den er false vil det ikke vøre mulig og entre den med et uhell
         while True:
 
-            print("\nSITUASJON 1:\nDen er mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker resten av teame. Hva burde Erling gjøre nå?")
-            print("1. Erling snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
-            print("2. Erling samler Silje og Elias for å diskutere uenigheten sammen.")
-            print("3. Erling velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
+            print("Den første konflikten du må håndtere, er konflikten mellom Silje og Elias. Denne konflikten har eskalert seg til en personkonflikt og påvirker nå resten av teamet.")
+            print("1. Du snakker med Silje og Elias hver for seg for å forstå begge perspektivene. ")
+            print("2. Du samler Silje og Elias for å diskutere uenigheten sammen.")
+            print("3. Du velger Elias sin tekniske løsning, men lar Silje foreslå mindre designforbedringer innenfor budsjettet.")
 
             svar = input("Velg alternativ: ")
 
             if svar == "1":
-                print("Du får bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.\n")
+                print("Du vil få bedre innsikt i konflikten, men det kan ta lengre tid før teamet kommer fram til en felles løsning.")
                 poeng += 15
                 situasjon_1_ferdig = True
                 #break gjør at while-løkken til konfliktene stopper, slik at man ikke ender opp i en evig loop i samme konflikt
